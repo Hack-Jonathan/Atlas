@@ -72,3 +72,11 @@ describe("helpers", () => {
     expect(isActivePath("/trends", "/dashboard")).toBe(false);
   });
 });
+
+describe("bodySystems", () => {
+  it("uses exactly the database system codes", async () => {
+    const { bodySystems } = await import("@/config/body-systems");
+    const { systemCodeSchema } = await import("@/lib/db/enums");
+    expect(bodySystems.map((s) => s.code).sort()).toEqual([...systemCodeSchema.options].sort());
+  });
+});

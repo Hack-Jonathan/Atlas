@@ -1,0 +1,2 @@
+# Keep SQL with LF endings on every OS (the generated history is compared byte-for-byte).
+*.sql text eol=lf
