@@ -5,7 +5,9 @@ Prototipo web de monitoreo de salud para astronautas en misiones espaciales, des
 
 ## Estado
 
-**Etapa 1 de desarrollo (entorno) completada.** Todas las rutas existen como páginas provisionales; el contenido llega en las etapas 2–7 (ver `PLAN.md` y la especificación del sistema).
+- **Etapa 1 (entorno e interfaz base): completada.**
+- **Etapa 2 (capa de datos): completada.** El SQL está listo para Supabase y verificado localmente. La app aún no se conecta a la base: eso llega en la Etapa 3.
+- Los planes de cada etapa están en `docs/plans/`.
 
 ## Requisitos
 
@@ -28,7 +30,8 @@ npm run dev                  # http://localhost:3000
 | `npm run start` | Sirve la compilación de producción |
 | `npm run lint` | ESLint |
 | `npm run typecheck` | Genera tipos de rutas y ejecuta `tsc --noEmit` |
-| `npm test` | Pruebas unitarias con Vitest |
+| `npm test` | Pruebas con Vitest: reglas, y la base de datos en PostgreSQL en memoria |
+| `npm run db:generate-history` | Regenera el historial simulado (`supabase/seed/03_history.sql`) |
 
 ## Estructura
 
@@ -44,9 +47,16 @@ src/
 │  ├─ dashboard/        Estado "¿estoy bien?" y los 6 sistemas
 │  └─ status/           Etiqueta de estado y la curva de la Tierra
 ├─ config/              Nombre del sitio y lista única de rutas
-├─ lib/                 Utilidades, validación de entorno (Zod), clientes Supabase
+├─ lib/
+│  ├─ rules/            Motor de reglas: semáforo, tendencia, línea base (RN-04…07)
+│  ├─ db/               Valores permitidos de la base de datos (Zod)
+│  ├─ demo/             Generador determinista del historial simulado
+│  └─ supabase/         Clientes Supabase
 └─ types/               Tipos compartidos
-tests/                  Pruebas de Vitest
+tests/                  Pruebas de Vitest (incluye tests/db para la base de datos)
+supabase/               Migraciones SQL y datos semilla (ver supabase/README.md)
+scripts/                Generador del historial y base local para pruebas
+docs/plans/             Planes y revisiones de cada etapa
 ```
 
 ## Rutas
@@ -63,6 +73,10 @@ tests/                  Pruebas de Vitest
 | `/assistant` | M07 | Asistente IA |
 | `/library` | M07 | Biblioteca científica |
 | `/settings` | M08 | Configuración y control de demo |
+
+## Base de datos
+
+Hay 12 tablas en PostgreSQL con Row Level Security por rol. Cómo aplicarlas y las cuentas demo: `supabase/README.md`.
 
 ## Diseño
 
