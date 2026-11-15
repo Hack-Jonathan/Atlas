@@ -39,6 +39,14 @@ insert into auth.users (
   '{"provider":"email","providers":["email"]}', '{"full_name":"Dr. Samuel Okafor"}', now(), now()
 );
 
+-- Supabase Auth reads these token columns as text and fails with
+-- "Database error querying schema" when they are NULL; set them to ''.
+update auth.users set
+  confirmation_token = '', recovery_token = '', email_change = '',
+  email_change_token_new = '', email_change_token_current = '',
+  phone_change = '', phone_change_token = '', reauthentication_token = ''
+where id in ('00000000-0000-4000-a000-0000000000a1', '00000000-0000-4000-a000-0000000000b1');
+
 -- Email identities so the accounts can sign in with email + password.
 insert into auth.identities (id, user_id, provider_id, provider, identity_data, created_at, updated_at)
 values
