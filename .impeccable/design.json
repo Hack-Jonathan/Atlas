@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-15T00:00:00Z",
+  "title": "Design System: Atlas",
+  "extensions": {
+    "colorMeta": {
+      "action": { "role": "primary", "displayName": "Cupola Cyan", "canonical": "oklch(0.79 0.13 230)", "tonalRamp": ["oklch(0.15 0.04 230)", "oklch(0.25 0.07 230)", "oklch(0.37 0.1 230)", "oklch(0.5 0.12 230)", "oklch(0.62 0.13 230)", "oklch(0.79 0.13 230)", "oklch(0.88 0.08 230)", "oklch(0.95 0.03 230)"] },
+      "action-foreground": { "role": "primary", "displayName": "Cupola Ink", "canonical": "oklch(0.18 0.05 250)", "tonalRamp": ["oklch(0.15 0.04 250)", "oklch(0.18 0.05 250)", "oklch(0.3 0.06 250)", "oklch(0.42 0.06 250)", "oklch(0.55 0.05 250)", "oklch(0.68 0.04 250)", "oklch(0.82 0.03 250)", "oklch(0.95 0.01 250)"] },
+      "status-ok": { "role": "status", "displayName": "Steady Green", "canonical": "oklch(0.78 0.16 155)", "tonalRamp": ["oklch(0.15 0.04 155)", "oklch(0.27 0.08 155)", "oklch(0.4 0.12 155)", "oklch(0.53 0.15 155)", "oklch(0.65 0.16 155)", "oklch(0.78 0.16 155)", "oklch(0.88 0.09 155)", "oklch(0.95 0.04 155)"] },
+      "status-watch": { "role": "status", "displayName": "Watch Amber", "canonical": "oklch(0.82 0.14 75)", "tonalRamp": ["oklch(0.15 0.03 75)", "oklch(0.28 0.07 75)", "oklch(0.42 0.1 75)", "oklch(0.56 0.12 75)", "oklch(0.7 0.14 75)", "oklch(0.82 0.14 75)", "oklch(0.9 0.08 75)", "oklch(0.96 0.03 75)"] },
+      "status-alert": { "role": "status", "displayName": "Alert Red", "canonical": "oklch(0.65 0.21 27)", "tonalRamp": ["oklch(0.15 0.05 27)", "oklch(0.25 0.1 27)", "oklch(0.37 0.15 27)", "oklch(0.5 0.19 27)", "oklch(0.65 0.21 27)", "oklch(0.75 0.15 27)", "oklch(0.86 0.08 27)", "oklch(0.95 0.03 27)"] },
+      "status-unknown": { "role": "status", "displayName": "Unknown Steel", "canonical": "oklch(0.72 0.08 240)", "tonalRamp": ["oklch(0.15 0.03 240)", "oklch(0.26 0.05 240)", "oklch(0.38 0.07 240)", "oklch(0.5 0.08 240)", "oklch(0.61 0.08 240)", "oklch(0.72 0.08 240)", "oklch(0.84 0.05 240)", "oklch(0.95 0.02 240)"] },
+      "space": { "role": "neutral", "displayName": "Night Side", "canonical": "oklch(0.15 0.035 266)", "tonalRamp": ["oklch(0.12 0.03 266)", "oklch(0.15 0.035 266)", "oklch(0.2 0.05 265)", "oklch(0.25 0.05 265)", "oklch(0.4 0.05 262)", "oklch(0.6 0.04 262)", "oklch(0.78 0.035 262)", "oklch(0.96 0.012 262)"] },
+      "space-raised": { "role": "neutral", "displayName": "Cloud Band", "canonical": "oklch(0.2 0.05 265)", "tonalRamp": ["oklch(0.12 0.03 265)", "oklch(0.16 0.04 265)", "oklch(0.2 0.05 265)", "oklch(0.25 0.055 265)", "oklch(0.35 0.05 265)", "oklch(0.5 0.04 265)", "oklch(0.7 0.03 265)", "oklch(0.92 0.01 265)"] },
+      "rail": { "role": "neutral", "displayName": "Rail Dark", "canonical": "oklch(0.12 0.03 266)", "tonalRamp": ["oklch(0.1 0.025 266)", "oklch(0.12 0.03 266)", "oklch(0.15 0.035 266)", "oklch(0.2 0.05 265)", "oklch(0.32 0.05 265)", "oklch(0.5 0.04 265)", "oklch(0.7 0.03 265)", "oklch(0.92 0.01 265)"] },
+      "hairline": { "role": "neutral", "displayName": "Hairline", "canonical": "oklch(0.85 0.04 260 / 11%)", "tonalRamp": ["oklch(0.85 0.04 260 / 4%)", "oklch(0.85 0.04 260 / 8%)", "oklch(0.85 0.04 260 / 11%)", "oklch(0.85 0.04 260 / 18%)", "oklch(0.85 0.04 260 / 30%)", "oklch(0.85 0.04 260 / 45%)", "oklch(0.85 0.04 260 / 65%)", "oklch(0.85 0.04 260 / 85%)"] },
+      "input-stroke": { "role": "neutral", "displayName": "Input Stroke", "canonical": "oklch(0.85 0.04 260 / 18%)" },
+      "porcelain": { "role": "neutral", "displayName": "Porcelain", "canonical": "oklch(0.96 0.012 262)", "tonalRamp": ["oklch(0.2 0.02 262)", "oklch(0.32 0.02 262)", "oklch(0.45 0.02 262)", "oklch(0.58 0.02 262)", "oklch(0.7 0.02 262)", "oklch(0.82 0.015 262)", "oklch(0.9 0.013 262)", "oklch(0.96 0.012 262)"] },
+      "haze": { "role": "neutral", "displayName": "Haze", "canonical": "oklch(0.78 0.035 262)", "tonalRamp": ["oklch(0.2 0.03 262)", "oklch(0.32 0.035 262)", "oklch(0.45 0.035 262)", "oklch(0.58 0.035 262)", "oklch(0.68 0.035 262)", "oklch(0.78 0.035 262)", "oklch(0.87 0.025 262)", "oklch(0.95 0.012 262)"] },
+      "disclaimer-band": { "role": "neutral", "displayName": "Disclaimer Band", "canonical": "oklch(0.2 0.06 20)" }
+    },
+    "typographyMeta": {
+      "wordmark": { "displayName": "Wordmark", "purpose": "The ATLAS mark only: Archivo 800 at 125% width, uppercase, tracked 0.32em (rail) or 0.28em at 6-8rem (landing hero)." },
+      "display": { "displayName": "Display", "purpose": "The status sentence over the Earth limb. One per screen; 3rem below xl." },
+      "headline": { "displayName": "Headline", "purpose": "Page titles on non-dashboard screens and the login question; 2.25rem on small screens." },
+      "title": { "displayName": "Title", "purpose": "Next-step panel heading, role names on login." },
+      "body-lead": { "displayName": "Body Lead", "purpose": "Haze line under a display or headline, up to 1.25rem, capped near 60ch." },
+      "body": { "displayName": "Body", "purpose": "Running text; nav links at 15px." },
+      "label": { "displayName": "Label", "purpose": "System names, field names, panel sub-lines in Haze." },
+      "data": { "displayName": "Data", "purpose": "JetBrains Mono with tabular numerals; mission strip values and module codes only." }
+    },
+    "shadows": [
+      { "name": "incident-glow", "value": "0 8px 24px -8px oklch(0.55 0.2 27 / 60%)", "purpose": "Colored glow under the Incident button only." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "Press scale, limb breathe, settle-in, arrow nudges." },
+      { "name": "ease-in-out", "value": "cubic-bezier(0.77, 0, 0.175, 1)", "purpose": "Defined for on-screen movement between states." },
+      { "name": "press", "value": "scale(0.97) 150ms ease-out", "purpose": "Active state of the Action and Incident buttons." },
+      { "name": "limb-breathe", "value": "1400ms ease-out, opacity 0.35 to 1, blur 6px to 0", "purpose": "Earth limb rim, once on show or status change." },
+      { "name": "settle-in", "value": "320ms ease-out, translateY 6px to 0, delays 0/40/70/110/140/170ms", "purpose": "Systems row cells, once on load." },
+      { "name": "reduced-motion", "value": "all animation and transition durations 1ms", "purpose": "prefers-reduced-motion: reduce." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Action Button",
+      "kind": "button",
+      "refersTo": "button-action",
+      "description": "The one cyan-filled next step on a screen.",
+      "html": "<a class=\"ds-btn-action\" href=\"#\">Start check-up <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></a>",
+      "css": ".ds-btn-action { display: inline-flex; align-items: center; gap: 8px; background: var(--action, oklch(0.79 0.13 230)); color: var(--action-foreground, oklch(0.18 0.05 250)); padding: 10px 16px; border-radius: 12px; font-family: Archivo, system-ui, sans-serif; font-weight: 600; font-size: 1rem; text-decoration: none; transition: transform 150ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn-action:active { transform: scale(0.97); } .ds-btn-action:focus-visible { outline: 2px solid var(--action, oklch(0.79 0.13 230)); outline-offset: 2px; }"
+    },
+    {
+      "name": "Incident Button",
+      "kind": "button",
+      "refersTo": "button-incident",
+      "description": "Always-visible red emergency path at the foot of the rail.",
+      "html": "<a class=\"ds-btn-incident\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 18v-6a5 5 0 1 1 10 0v6\"/><path d=\"M5 21a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2z\"/><path d=\"M21 12h1\"/><path d=\"M18.5 4.5 18 5\"/><path d=\"M2 12h1\"/><path d=\"M12 2v1\"/><path d=\"m4.929 4.929.707.707\"/><path d=\"M12 12v6\"/></svg><span class=\"ds-incident-text\"><span class=\"ds-incident-title\">Incident mode</span><span class=\"ds-incident-sub\">Acute situation checklist</span></span></a>",
+      "css": ".ds-btn-incident { display: flex; align-items: center; gap: 12px; width: 204px; background: var(--incident, oklch(0.55 0.2 27)); color: #fff; padding: 14px 16px; border-radius: 16.8px; box-shadow: 0 8px 24px -8px oklch(0.55 0.2 27 / 60%); font-family: Archivo, system-ui, sans-serif; text-decoration: none; transition: transform 150ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn-incident:active { transform: scale(0.97); } .ds-btn-incident:focus-visible { outline: 2px solid var(--action, oklch(0.79 0.13 230)); outline-offset: 2px; } .ds-incident-text { line-height: 1.25; } .ds-incident-title { display: block; font-weight: 700; } .ds-incident-sub { display: block; font-size: 12px; color: rgb(255 255 255 / 85%); }"
+    },
+    {
+      "name": "Next-Step Panel",
+      "kind": "card",
+      "refersTo": "next-step-panel",
+      "description": "The single bordered container on the dashboard, holding the one Action button.",
+      "html": "<div class=\"ds-next-step\"><h2 class=\"ds-next-title\">Check-up</h2><p class=\"ds-next-sub\">Guided, step by step. Under 5 minutes.</p><a class=\"ds-next-btn\" href=\"#\">Start check-up</a></div>",
+      "css": ".ds-next-step { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; max-width: 24rem; padding: 24px; border-radius: 16px; border: 1px solid oklch(0.79 0.13 230 / 40%); background: oklch(0.2 0.05 265 / 80%); color: var(--porcelain, oklch(0.96 0.012 262)); font-family: Archivo, system-ui, sans-serif; } .ds-next-title { margin: 0; font-size: 1.5rem; font-weight: 700; } .ds-next-sub { margin: 4px 0 0; font-size: 0.875rem; color: var(--haze, oklch(0.78 0.035 262)); } .ds-next-btn { background: var(--action, oklch(0.79 0.13 230)); color: var(--action-foreground, oklch(0.18 0.05 250)); padding: 10px 16px; border-radius: 12px; font-weight: 600; text-decoration: none; transition: transform 150ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-next-btn:active { transform: scale(0.97); } .ds-next-btn:focus-visible { outline: 2px solid var(--action, oklch(0.79 0.13 230)); outline-offset: 2px; }"
+    },
+    {
+      "name": "Rail Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "The four crew links on Rail Dark; active is filled, bright and cyan-iconed.",
+      "html": "<nav class=\"ds-rail\"><a class=\"ds-nav-link\" aria-current=\"page\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m12 14 4-4\"/><path d=\"M3.34 19a10 10 0 1 1 17.32 0\"/></svg>Dashboard</a><a class=\"ds-nav-link\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"8\" height=\"4\" x=\"8\" y=\"2\" rx=\"1\"/><path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"/><path d=\"m9 14 2 2 4-4\"/></svg>Check-up</a></nav>",
+      "css": ".ds-rail { display: flex; flex-direction: column; gap: 4px; width: 204px; padding: 14px; background: var(--rail, oklch(0.12 0.03 266)); font-family: Archivo, system-ui, sans-serif; } .ds-nav-link { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 12px; font-size: 15px; color: var(--haze, oklch(0.78 0.035 262)); text-decoration: none; transition: background-color 150ms ease-out, color 150ms ease-out; } @media (hover: hover) { .ds-nav-link:hover { background: var(--space-raised, oklch(0.2 0.05 265)); color: var(--porcelain, oklch(0.96 0.012 262)); } } .ds-nav-link:focus-visible { outline: 2px solid var(--action, oklch(0.79 0.13 230)); outline-offset: 2px; } .ds-nav-link[aria-current=\"page\"] { background: var(--space-raised, oklch(0.2 0.05 265)); color: var(--porcelain, oklch(0.96 0.012 262)); font-weight: 600; } .ds-nav-link[aria-current=\"page\"] svg { color: var(--action, oklch(0.79 0.13 230)); }"
+    },
+    {
+      "name": "Status Label",
+      "kind": "chip",
+      "refersTo": "status-label",
+      "description": "Shape icon in the level color plus the level word; never color alone.",
+      "html": "<div class=\"ds-status-set\"><span class=\"ds-status ds-ok\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m9 12 2 2 4-4\"/></svg><span>Steady</span></span><span class=\"ds-status ds-watch\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\"/><path d=\"M12 9v4\"/><path d=\"M12 17h.01\"/></svg><span>Watch</span></span><span class=\"ds-status ds-alert\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 16h.01\"/><path d=\"M12 8v4\"/><path d=\"M15.312 2a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586l-4.688-4.688A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2z\"/></svg><span>Alert</span></span><span class=\"ds-status ds-unknown\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M10.1 2.182a10 10 0 0 1 3.8 0\"/><path d=\"M13.9 21.818a10 10 0 0 1-3.8 0\"/><path d=\"M17.609 3.721a10 10 0 0 1 2.69 2.7\"/><path d=\"M2.182 13.9a10 10 0 0 1 0-3.8\"/><path d=\"M20.279 17.609a10 10 0 0 1-2.7 2.69\"/><path d=\"M21.818 10.1a10 10 0 0 1 0 3.8\"/><path d=\"M3.721 6.391a10 10 0 0 1 2.7-2.69\"/><path d=\"M6.391 20.279a10 10 0 0 1-2.69-2.7\"/></svg><span>No data yet</span></span></div>",
+      "css": ".ds-status-set { display: flex; flex-wrap: wrap; gap: 24px; } .ds-status { display: inline-flex; align-items: center; gap: 8px; font-family: Archivo, system-ui, sans-serif; font-size: 1.125rem; font-weight: 600; color: var(--porcelain, oklch(0.96 0.012 262)); } .ds-status svg { width: 1.1em; height: 1.1em; flex-shrink: 0; } .ds-ok svg { color: var(--status-ok, oklch(0.78 0.16 155)); } .ds-watch svg { color: var(--status-watch, oklch(0.82 0.14 75)); } .ds-alert svg { color: var(--status-alert, oklch(0.65 0.21 27)); } .ds-unknown svg { color: var(--status-unknown, oklch(0.72 0.08 240)); }"
+    },
+    {
+      "name": "Systems Row",
+      "kind": "custom",
+      "refersTo": "system-cell",
+      "description": "Body systems in one hairline-ruled row with identical furniture per cell.",
+      "html": "<ul class=\"ds-systems\"><li class=\"ds-system\"><p class=\"ds-sys-name\">Heart &amp; circulation</p><p class=\"ds-sys-state\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\" stroke-dasharray=\"3 3\"/></svg>No data yet</p><p class=\"ds-sys-line\">Heart rate and blood pressure.</p></li><li class=\"ds-system\"><p class=\"ds-sys-name\">Bone &amp; muscle</p><p class=\"ds-sys-state\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\" stroke-dasharray=\"3 3\"/></svg>No data yet</p><p class=\"ds-sys-line\">Bone density from periodic scans.</p></li><li class=\"ds-system\"><p class=\"ds-sys-name\">Eyes &amp; brain</p><p class=\"ds-sys-state\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\" stroke-dasharray=\"3 3\"/></svg>No data yet</p><p class=\"ds-sys-line\">Periodic eye exam and eye scan.</p></li></ul>",
+      "css": ".ds-systems { display: grid; grid-template-columns: repeat(3, 1fr); margin: 0; padding: 0; list-style: none; border-top: 1px solid oklch(0.85 0.04 260 / 11%); border-bottom: 1px solid oklch(0.85 0.04 260 / 11%); background: var(--space, oklch(0.15 0.035 266)); font-family: Archivo, system-ui, sans-serif; } .ds-system { padding: 16px 20px; } .ds-system:not(:last-child) { border-right: 1px solid oklch(0.85 0.04 260 / 11%); } .ds-sys-name, .ds-sys-line { margin: 0; font-size: 0.875rem; color: var(--haze, oklch(0.78 0.035 262)); } .ds-sys-line { margin-top: 6px; line-height: 1.375; } .ds-sys-state { display: flex; align-items: center; gap: 8px; margin: 10px 0 0; font-size: 1.125rem; font-weight: 600; color: var(--porcelain, oklch(0.96 0.012 262)); } .ds-sys-state svg { width: 1.1em; height: 1.1em; color: var(--status-unknown, oklch(0.72 0.08 240)); }"
+    },
+    {
+      "name": "Mission Strip",
+      "kind": "custom",
+      "refersTo": "mission-field",
+      "description": "Hairline-separated mission fields with mono values along the top of the crew area.",
+      "html": "<dl class=\"ds-strip\"><div class=\"ds-field\"><dt>Mission</dt><dd>Not set</dd></div><div class=\"ds-field\"><dt>Mission day</dt><dd>Not set</dd></div><div class=\"ds-field\"><dt>Earth link delay</dt><dd>Not set</dd></div></dl>",
+      "css": ".ds-strip { display: flex; margin: 0; border-bottom: 1px solid oklch(0.85 0.04 260 / 11%); background: var(--space, oklch(0.15 0.035 266)); font-family: Archivo, system-ui, sans-serif; font-size: 12px; } .ds-field { padding: 10px 24px; border-right: 1px solid oklch(0.85 0.04 260 / 11%); } .ds-field dt { color: var(--haze, oklch(0.78 0.035 262)); } .ds-field dd { margin: 2px 0 0; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; font-variant-numeric: tabular-nums; color: var(--haze, oklch(0.78 0.035 262)); }"
+    },
+    {
+      "name": "Earth Limb",
+      "kind": "custom",
+      "refersTo": "earth-limb",
+      "description": "Signature horizon: star field, planet gradient, city lights and a status-colored rim that breathes in once.",
+      "html": "<div class=\"ds-limb\"><svg viewBox=\"0 0 1200 300\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><defs><radialGradient id=\"ds-planet\" cx=\"50%\" cy=\"10%\" r=\"80%\"><stop offset=\"0%\" stop-color=\"oklch(0.32 0.1 255)\"/><stop offset=\"30%\" stop-color=\"oklch(0.22 0.07 260)\"/><stop offset=\"100%\" stop-color=\"oklch(0.15 0.035 266)\"/></radialGradient><filter id=\"ds-glow\" x=\"-10%\" y=\"-200%\" width=\"120%\" height=\"500%\"><feGaussianBlur stdDeviation=\"12\"/></filter></defs><g fill=\"oklch(0.95 0.02 250)\"><circle cx=\"40\" cy=\"30\" r=\"1.1\" opacity=\"0.7\"/><circle cx=\"205\" cy=\"18\" r=\"1.3\" opacity=\"0.8\"/><circle cx=\"455\" cy=\"98\" r=\"1.2\" opacity=\"0.7\"/><circle cx=\"655\" cy=\"22\" r=\"1.4\" opacity=\"0.85\"/><circle cx=\"903\" cy=\"86\" r=\"1.2\" opacity=\"0.7\"/><circle cx=\"1094\" cy=\"58\" r=\"1.3\" opacity=\"0.8\"/></g><path d=\"M-40 300 Q600 70 1240 300 Z\" fill=\"url(#ds-planet)\"/><g fill=\"oklch(0.85 0.14 75)\" opacity=\"0.55\"><circle cx=\"352\" cy=\"211\" r=\"1.4\"/><circle cx=\"512\" cy=\"197\" r=\"1.3\"/><circle cx=\"706\" cy=\"194\" r=\"1.5\"/><circle cx=\"902\" cy=\"203\" r=\"1.3\"/></g><g class=\"ds-rim\"><path d=\"M-40 300 Q600 70 1240 300\" fill=\"none\" stroke=\"oklch(0.72 0.08 240)\" stroke-width=\"34\" opacity=\"0.22\" filter=\"url(#ds-glow)\"/><path d=\"M-40 300 Q600 70 1240 300\" fill=\"none\" stroke=\"oklch(0.72 0.08 240)\" stroke-width=\"10\" opacity=\"0.5\" filter=\"url(#ds-glow)\"/><path d=\"M-40 300 Q600 70 1240 300\" fill=\"none\" stroke=\"oklch(0.72 0.08 240)\" stroke-width=\"2.2\"/></g></svg></div>",
+      "css": ".ds-limb { height: 220px; background: var(--space, oklch(0.15 0.035 266)); } .ds-limb svg { display: block; width: 100%; height: 100%; } .ds-rim { animation: ds-limb-breathe 1400ms cubic-bezier(0.23, 1, 0.32, 1) both; } @keyframes ds-limb-breathe { from { opacity: 0.35; filter: blur(6px); } to { opacity: 1; filter: blur(0); } } @media (prefers-reduced-motion: reduce) { .ds-rim { animation-duration: 1ms; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Cupola at Night",
+    "overview": "Atlas is seen from inside a dim cabin looking down at the night side of Earth. The whole interface is one deep blue-black field, and status reads like the horizon: a single luminous limb along the bottom of the hero that is either calm or not. Above it sits one sentence in heavy Archivo that answers \"am I OK?\" in plain words. Everything else is quiet furniture: hairline-ruled rows, haze-colored secondary text, mono numbers in a thin strip along the top.\n\nDensity is low at the top of each screen and rises only below the horizon, where the six body systems share one ruled row with identical furniture so they compare at a glance. Containers are rare. Structure comes from hairlines and rails, not from floating cards. Color is spent on meaning: four status hues (always with a shape and a word), one cyan action color, and the red of the Incident path.\n\nThe world must feel NASA mission-control, lively rather than muted: saturated status color, a wide tracked wordmark, and a glowing rim, all on a dark field. It rejects the health dashboard built from a grid of identical cards.",
+    "keyCharacteristics": [
+      "Dark only. One palette, `color-scheme: dark`, no light theme.",
+      "The Earth limb is the signature: a curved rim in the overall status color, breathing in once on show.",
+      "Status is always shape + word + color, never color alone.",
+      "Hairline rules divide modules; one bordered panel per screen at most.",
+      "Archivo for everything human; JetBrains Mono only for measurements and mission data."
+    ],
+    "rules": [
+      { "name": "The Shape-Word-Color Rule", "body": "A status is never a color alone. Every status shows its shape icon and its word, and the color is the third, redundant channel. The limb is decorative (`aria-hidden`) because the sentence above it always states the status.", "section": "colors" },
+      { "name": "The One Filled Action Rule", "body": "Each screen has at most one cyan-filled control. Cyan may appear elsewhere only as an icon or a text link, never as a second fill.", "section": "colors" },
+      { "name": "The Red Means Incident Rule", "body": "A filled red control is the Incident path and nothing else.", "section": "colors" },
+      { "name": "The Mono Is Instrument Rule", "body": "JetBrains Mono appears only where a value is measured or coded (mission strip, module ids). Labels beside it stay in Archivo.", "section": "typography" },
+      { "name": "The Wide Is Brand Rule", "body": "The 125% width is reserved for the wordmark; UI text stays at normal width.", "section": "typography" },
+      { "name": "The Light Not Shadow Rule", "body": "Surfaces sit flat. When something needs presence, it is lit (glow in its own color) rather than dropped onto a shadow.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** show every status as shape + word + color, using the four levels exactly as configured (Steady, Watch, Alert, No data yet).",
+      "**Do** let the Earth limb carry the overall status color and keep it beneath content, `aria-hidden`.",
+      "**Do** divide modules with hairlines (`hairline`, 1px) and give compared items identical furniture and size.",
+      "**Do** keep one cyan-filled action per screen; press feedback is a 0.97 scale over 150ms with `cubic-bezier(0.23, 1, 0.32, 1)`.",
+      "**Do** gate hover styles behind `@media (hover: hover)`.",
+      "**Do** keep motion to one-time entrances (limb breathe, settle-in) and collapse it to near-instant under reduced motion.",
+      "**Do** say \"Not set\" or \"No data yet\" when a value does not exist yet."
+    ],
+    "donts": [
+      "**Don't** build the dashboard from a grid of identical floating cards; use the ruled row.",
+      "**Don't** use a filled red control for anything but the Incident path.",
+      "**Don't** use JetBrains Mono for labels or prose, or the 125% width for anything but the wordmark.",
+      "**Don't** add a light theme or light surfaces; Atlas always renders in the dim-cabin palette.",
+      "**Don't** add drop shadows to surfaces; the Incident glow is the only shadow."
+    ]
+  }
+}
