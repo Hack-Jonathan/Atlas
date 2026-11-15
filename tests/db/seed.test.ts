@@ -129,8 +129,6 @@ describe("determinism", () => {
   it("the committed 03_history.sql equals the generator output", async () => {
     // Line endings are normalized: Git may check files out with CRLF on Windows.
     const committed = readFileSync(join(process.cwd(), "supabase", "seed", "03_history.sql"), "utf8");
-    expect(await buildHistorySql()).toBe(committed.replace(/
-/g, "
-"));
+    expect(await buildHistorySql()).toBe(committed.replace(/\r\n/g, "\n"));
   }, 60_000);
 });
