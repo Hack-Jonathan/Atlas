@@ -134,3 +134,17 @@
 | Code inspection | 4 | 4× REVISE, 9 findings in total, all accepted and fixed |
 
 The last fix batch has not been inspected.
+
+## Applied to the real Supabase project (2026-11-15)
+
+Two fixes were found while Jonathan applied the SQL in the Supabase SQL Editor. Codex did not inspect them; both were verified against the real project.
+
+- `8e272f4`: `03_history.sql` failed with a duplicate `baseline_pkey` on a second run. It is now re-runnable: in one transaction, it deletes the demo astronaut's previous history before inserting.
+- `700b567`: demo login failed with "Database error querying schema", because Supabase Auth cannot read NULL token columns. `02_demo.sql` now sets them to `''`.
+
+Verification on the real project (anon key, demo logins):
+- Both logins OK.
+- Counts: 10 indicators, 3 scenarios, 13 articles, 1 mission, 2 profiles, 7 baselines, 73 checkups, 573 measurements, 12 alerts, 74 messages.
+- The visitor is blocked.
+- Self role change is blocked for both accounts.
+- No in-transit message is visible to the surgeon.
