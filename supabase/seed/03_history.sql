@@ -6,6 +6,14 @@
 -- All values are simulated demonstration data (RN-15).
 -- =============================================================================
 
+-- Re-runnable: clear any previous demo history of the demo astronaut
+begin;
+delete from public.message where mission_id = '00000000-0000-4000-a000-000000000001' and (sender_id = '00000000-0000-4000-a000-0000000000a1' or recipient_id = '00000000-0000-4000-a000-0000000000a1');
+delete from public.alert where profile_id = '00000000-0000-4000-a000-0000000000a1';
+delete from public.measurement where profile_id = '00000000-0000-4000-a000-0000000000a1';
+delete from public.checkup where profile_id = '00000000-0000-4000-a000-0000000000a1';
+delete from public.baseline where profile_id = '00000000-0000-4000-a000-0000000000a1';
+
 -- Personal baselines from the pre-flight check-ups (RN-05)
 insert into public.baseline (id, profile_id, indicator_id, reference_value, std_dev, sample_count, source, updated_at) values
   ('d30a818a-5e35-46c5-b23b-bf183686079d', '00000000-0000-4000-a000-0000000000a1', (select id from public.indicator where code = 'heart_rate'), 64.4, 2.67, 10, 'calculated', date_trunc('day', now()) - interval '65 days' + interval '360 minutes'),
@@ -759,3 +767,5 @@ insert into public.message (id, mission_id, sender_id, recipient_id, type, prior
   ('d73a9827-1157-4110-bc7f-7d294ef4226e', '00000000-0000-4000-a000-000000000001', '00000000-0000-4000-a000-0000000000a1', '00000000-0000-4000-a000-0000000000b1', 'checkup_report', 'high', 'Daily check-up · needs a look', 'Automatic report: at least one value outside the usual range. See the linked check-up.', '2e0f009b-bf9e-43ae-ba1c-cda30d73f8e1', null, null, date_trunc('day', now()) - interval '2 days' + interval '458 minutes', date_trunc('day', now()) - interval '2 days' + interval '458 minutes' + interval '1 hour'),
   ('9f4bbac9-bea2-4726-b24f-941f173fdada', '00000000-0000-4000-a000-000000000001', '00000000-0000-4000-a000-0000000000a1', '00000000-0000-4000-a000-0000000000b1', 'checkup_report', 'high', 'Daily check-up · needs a look', 'Automatic report: at least one value outside the usual range. See the linked check-up.', 'a94fd8d3-db43-43d2-9d12-0f14b16d1340', null, null, date_trunc('day', now()) - interval '1 days' + interval '458 minutes', null),
   ('91c02345-e99d-4553-9317-afd45c94e72a', '00000000-0000-4000-a000-000000000001', '00000000-0000-4000-a000-0000000000a1', '00000000-0000-4000-a000-0000000000b1', 'message', 'normal', 'Sleep the last few nights', 'Sleep has been shorter than usual the last few nights. Can we review my work schedule?', null, null, null, now(), null);
+
+commit;

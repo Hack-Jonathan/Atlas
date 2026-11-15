@@ -54,6 +54,20 @@ export function historyToSql(h: GeneratedHistory, ctx: SqlContext): string {
     "",
   );
 
+  // Re-runnable: remove any earlier copy of the demo history first (children
+  // before parents), all in one transaction. Run it from the SQL Editor (admin
+  // role); client roles cannot delete messages (RN-11).
+  parts.push(
+    "-- Re-runnable: clear any previous demo history of the demo astronaut",
+    "begin;",
+    `delete from public.message where mission_id = ${q(mission)} and (sender_id = ${q(astro)} or recipient_id = ${q(astro)});`,
+    `delete from public.alert where profile_id = ${q(astro)};`,
+    `delete from public.measurement where profile_id = ${q(astro)};`,
+    `delete from public.checkup where profile_id = ${q(astro)};`,
+    `delete from public.baseline where profile_id = ${q(astro)};`,
+    "",
+  );
+
   parts.push(
     "-- Personal baselines from the pre-flight check-ups (RN-05)",
     insert(
@@ -109,5 +123,6 @@ export function historyToSql(h: GeneratedHistory, ctx: SqlContext): string {
     ),
   );
 
+  parts.push("commit;", "");
   return parts.join("\n");
 }
